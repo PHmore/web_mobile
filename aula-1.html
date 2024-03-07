@@ -1,11 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Aula-1</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/funcoes.js"></script>
 </head>
 <body>
-    
+    <h1>Primeiro cabeçalho</h1>
+    <h2>Segundo cabeçalho</h2>
+    <h3>Terceiro cabeçalho</h3>
+    <p>Primeiro paragráfo</p>
+    <img src="img/image.png" title="primeira imagem" width="80" height="80">
+    <a href="https://ww2.uft.edu.br" target="_blank">Primeiro link</a>
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <table>
+        <caption>Descrição da tabela</caption>
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linha 1 - Coluna 1</td>
+                <td>Linha 1 - Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Linha 2 - Coluna 1</td>
+                <td>Linha 2 - Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Linha 3 - Coluna 1</td>
+                <td>Linha 3 - Coluna 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- action = representa uma rota -->
+    <form action="/cadastro/" method="post">
+        Login: <input type="text" name="Login" id="Email">
+        Senha: <input type="password" name="Senha" id="Senha">
+
+        <input type="radio" name="sexo" id="sexo" value="1" checked>Masculino
+        <input type="radio" name="sexo" id="sexo" value="2">Feminino
+
+        <input type="checkbox" name="veiculo1" value="bike">Eu tenho uma bike
+        <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro
+
+        <select name="curso" multiple="true">
+            <option value="1">Ciência da computação</option>
+            <option value="2">Direto</option>
+            <option value="3">Engenharia Elétrica</option>
+            <option value="4">Medicina</option>
+        </select>
+
+        <textarea name="messagem" id="messagem" cols="30" rows="10"></textarea>
+
+        <input type="number" name="idade" min="0" max="100" step="2">
+
+        <input type="date" name="data" min="2000-01-23">
+
+        autocomplete: <input list="cheeses">
+        <datalist id="cheeses">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </datalist>
+
+        <!-- São campos os quais não ficam evidentes para usuários  -->
+        <input type="hidden" name="country" value="Brasil">
+        <input type="reset" value="Formatar">
+        <input type="submit" value="Enviar">
+
+
+    </form>
+    <!-- GET = receber
+        POST = enviar
+        UPDATE = atualizar
+        REMOVE = remover
+     -->
+
+     <div>Elemento de bloco</div>
+     <span>Elemento de linha 111</span>
+     <span>Elemento de linha 222</span>
+
 </body>
 </html>
